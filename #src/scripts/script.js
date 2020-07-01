@@ -1,4 +1,4 @@
-let burger = $(".header-mobile__open-menu");
+let burger = $(".header-mobile__burger");
 let burger_first = $(".header-mobile__open-menu:first-child");
 let burger_last = $(".header-mobile__open-menu:last-child");
 let burger_center = $(".header-mobile__open-menu:nth-child(2)");
@@ -16,8 +16,14 @@ burger.on("click",
         burger_center.toggleClass("bias_center");
         down_menu.toggleClass("menu-show");
         html.toggleClass("scroll");
+        show_dropdown ();
     }
 );
+function show_dropdown () {
+    dropdown.css("left", "100vw");
+    down_items.show();
+    footer_links.show();
+}
 down_items.on("click", 
     function () {
         down_index = down_items.index(this);
@@ -29,11 +35,7 @@ down_items.on("click",
     }
 );
 bnt.on("click", 
-    function () {
-        dropdown.css("left", "100vw");
-        down_items.show();
-        footer_links.show();
-    }
+    show_dropdown ()
 );
 
 

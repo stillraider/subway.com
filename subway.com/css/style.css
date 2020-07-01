@@ -344,6 +344,11 @@ body {
   position: relative;
 }
 
+.down-menu__footer-links {
+  overflow: hidden;
+  height: 117%;
+}
+
 .down-menu__svg-text {
   font-family: "KFO-Regular";
   text-align: center;
@@ -484,7 +489,7 @@ body {
 .menu-show {
   display: block;
   height: 100vh;
-  overflow: scroll;
+  overflow-x: hidden;
 }
 
 .slick-list {
