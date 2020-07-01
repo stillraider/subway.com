@@ -35,7 +35,7 @@ down_items.on("click",
     }
 );
 bnt.on("click", 
-    show_dropdown ()
+    show_dropdown
 );
 
 
