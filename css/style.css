@@ -713,7 +713,6 @@ body {
 
 .main-content .content-flex .content-flex__img-indent:nth-child(1) {
   width: 100%;
-  height: 100%;
 }
 
 .main-content .content-flex .content-flex__img-indent:nth-child(1) .content-flex__img {
@@ -729,6 +728,8 @@ body {
 .main-content .content-flex .content-flex__img-indent:nth-child(2) .content-flex__img:last-child {
   -ms-flex-flow: wrap;
       flex-flow: wrap;
+  width: 100%;
+  height: 100%;
 }
 
 .main-content .content-flex .content-flex__img-indent:nth-child(2) {
